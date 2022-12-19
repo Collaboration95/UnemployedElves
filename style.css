@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Mouse+Memoirs&display=swap'); 
+
+:root{
+    --backgroundcolor:white;
+    --buttonborder:#154c79;
+    --buttonboxshadow:#154c7934;
+    --buttontoggleButton:#17588de6;
+    --buttonequaltone:#76b5c5;
+    --displayboxshadow:rgb(223, 222, 222);
+    --displaybackgroundcolor:rgba(255, 255, 255, 0.858);
+    --calcboxshadow:#154c7979;
+    --displayfont:black;
+}
+body{
+    display:flex; 
+    flex-direction:column;
+    justify-content:center; 
+}
+
+.container{
+    flex-direction:row;
+    background-color:pink;
+}
+
+@media  (max-width: 688px){
+    body{
+        
+    }
+
+   }
