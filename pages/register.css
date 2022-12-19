@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Mouse+Memoirs&display=swap'); 
+
+:root{
+    --backgroundcolor:white;
+    --primarycolordark:#5A4683;
+    --primarycolortone:#D7CDE9;
+    font-family: 'Mogra', cursive;
+    font-family: 'Mouse Memoirs', sans-serif; 
+}
+
+.RegisterButton{
+    margin:10px 5px 10px 5px;
+}
+
+a{
+    text-decoration:none;
+    color:white;    
+}
