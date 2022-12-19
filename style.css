@@ -9,17 +9,19 @@
     
 }
 body{
+    margin-top:20px;
     display:flex; 
     width:auto;
     align-items: center;
-    justify-content:center;
+    flex-direction:column;
+
 }
 
 .container{
     display:flex;
     flex-direction:column;
+    justify-content: justify;
     align-items:center;
-    background-color:pink;
     padding: 10px 10px 10px 10px;
 }
 
@@ -27,37 +29,87 @@ body{
     display:flex;
     flex-direction:column;
     align-items: center;
-    font-size:30px;
-    letter-spacing:1.5px;
+    font-size:45px;
+    letter-spacing:2px;
+    
 }
 
 .loginpageinput{
+
+    margin:10px 0px 30px 0px;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
+
 .loginpageinput input{
+    border:2px solid var(--primarycolordark);
     background-color: var(--primarycolortone);
     text-align: center;
-    border-radius:5px;
-    width:100px;
-    margin:10px 0px 10px 0px;
+    border-radius:6px;
+    width:250px;    
+    height: 36px;
+    margin:20px 0px 15px 0px;
+    transition: border .7s ease-in-out .5s;
+}
+
+
+.loginpageinput input:focus{
+    border: 4px dashed var(--primarycolordark);
+}
+::placeholder{
+    color:var(--primarycolordark);
+    font-size:15px;
+    font-family: 'Mogra', cursive;
+    font-family: 'Mouse Memoirs', sans-serif; 
+    letter-spacing:1px;
+
 }
 
 .signinButton{
     margin:10px 5px 10px 5px;
-
 }
 
 a{
     text-decoration:none;
-    color:white;
+    color:white;    
 }
 
-@media  (max-width: 688px){
-    body{
-        
-    }
-    
-   }
+.registerlink{
+
+    color:var(--primarycolordark);    
+}
+.underline{
+    display:box;
+    width:10px;
+    height:10px;
+}
+#signin{
+    border-radius:7px;
+    background-color:var(--primarycolordark);
+    width:160px;
+    font-family: inherit;
+    letter-spacing: 1.1px;
+    height: 35px;
+    font-size:20px;
+    border:none;
+    margin-top:20px;
+    box-shadow: 5px 10px 1px black;
+
+    transition: 0.1s .05s box-shadow ease-in-out;
+}
+
+#signin:active{
+    box-shadow: 4px 6px 1px black;
+}
+
+.registertext{
+    background-color:var(--primarycolordark);
+}
+
+.registerlink{
+    font-size:25px;
+    text-decoration:underline solid 3px;
+    background-color:white;
+}
