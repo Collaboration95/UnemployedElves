@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Mogra&family=Mouse+Memoirs&display=swap'); 
+
+:root{
+    --backgroundcolor:white;
+    --primarycolordark:#5A4683;
+    --primarycolortone:#D7CDE9;
+    font-family: 'Mogra', cursive;
+    font-family: 'Mouse Memoirs', sans-serif;     
+}
+
+table,th,td{
+    border:1px solid var(--primarycolordark);
+}
+
+table {
+    border :5px solid var(--primarycolordark);
+}
+
+th,td{
+    overflow: hidden;
+    white-space: nowrap;
+    max-width:fit-content;
+    border-radius:1px;
+}
+
+#customers tr:nth-child(even){background-color:#d7cde988}
+
+@media  (max-width: 688px){
+    table,th,td{
+        border:1px solid var(--primarycolordark);
+        font-size: 20px;
+    }
+    table {
+        border :3px solid var(--primarycolordark);
+        border-radius: 4px;
+    }
+    th,td{
+        padding:2px 3px 2px 3px;
+        max-width:100px;
+    }
+
+    
+   }
+
+   @media  only screen and (min-width: 688px){
+    .Titletext2{
+        font-size:50px;
+    }
+    th:first-child{
+        border:3px solid black;
+    }
+    table,th,td{
+        border:1px solid var(--primarycolordark);
+        font-size: 40px;
+    }
+    th{
+        border:3px solid black;
+    }
+    
+    table {
+        border :5px solid var(--primarycolordark);
+        border-radius: 8px;
+        padding:5px;
+    }
+    
+    th,td{
+        padding:2px 3px 2px 3px;
+        overflow: hidden;
+        white-space: nowrap;
+        width:500px;
+        max-width:500px;
+        text-align: center;
+    }
+    
+    td{
+        padding:5px;
+        border-radius:3px;
+    }
+    
+    tr{
+        transition: all .5s ease-in;
+    }
+    
+    tr:not(:first-child):hover 
+    {
+        background-color:var(--primarycolortone);
+        transform:scale(1.1);
+    }      
+    input[type='checkbox']{
+        transform: scale(2);
+        width:auto;
+    }          
+}
